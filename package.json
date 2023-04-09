@@ -1,0 +1,22 @@
+{
+  "name": "esign",
+  "version": "1.0.0",
+  "description": "document signing",
+  "main": "index.js",
+  "scripts": {
+    "prod": "npm run build -- -w",
+    "dev": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" src/app.ts"
+  },
+  "author": "ArrjunPradeep",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.15.11",
+    "hardhat": "^2.13.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.4"
+  }
+}
